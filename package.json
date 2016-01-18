@@ -14,6 +14,6 @@
     "dependencies": {
         "gulp-util": "^3.0.7",
         "gulp": "^3.9.0",
-        "tms-widget-builder": "^2.2.1"
+        "tms-widget-builder": "*"
     }
 }
