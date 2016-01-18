@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <title>lib-lazyload demo</title>
+    <style>
+    </style>
+    <!-- <link href="build/lazyload.debug.css" rel="stylesheet" type="text/css" /> -->
+</head>
+
+<body>
+    <h1>layer demo</h1>
+    <p style="text-align: center;">API参考 <a href="http://layer.layui.com">http://layer.layui.com</a> layer官网</p>
+    <p style="text-align: center;">
+        <button id="show" style="font-size:18px;">show</button>
+    </p>
+    <script src="http://pcstatics.shenba.com/_src/_js/vendor/require/require.js?_v2.4"></script>
+    <script src="http://pcstatics.shenba.com/_src/_js/vendor/jquery/jquery.js?_v2.4"></script>
+    <script src="./require_cfg.js"></script>
+    <script>
+    require(['layer'], function() {
+        console.log(Lib);
+        layer = Lib.layer;
+        layer.config({
+            path: '/dist/' //layer.js所在的目录，可以是绝对目录，也可以是相对目录
+        });
+        $("#show").click(function() {
+            layer.open({
+                title: 'test',
+                content: 'hello layer'
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>

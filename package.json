@@ -1,0 +1,20 @@
+{
+    "name": "demo",
+    "description": "",
+    "version": "",
+    "main": "dist/demo.js",
+    "author": {
+        "name": "lmtdit",
+        "email": "lmtdit@gmail.com"
+    },
+    "keywords": [
+        "demo"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "gulp-util": "^3.0.7",
+        "gulp": "^3.9.0",
+        "tms-widget-builder": "^2.2.1",
+        "yargs": "^3.31.0"
+    }
+}
