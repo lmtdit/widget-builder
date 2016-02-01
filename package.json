@@ -1,19 +1,26 @@
 {
-    "name": "widget-builder",
-    "description": "前端独立控件开发构建工具",
-    "version": "0.0.1",
-    "main": "dist/demo.js",
-    "author": {
-        "name": "lmtdit",
-        "email": "lmtdit@gmail.com"
-    },
-    "keywords": [
-        "demo"
-    ],
-    "license": "MIT",
-    "dependencies": {
-        "gulp-util": "^3.0.7",
-        "gulp": "^3.9.0",
-        "tms-widget-builder": "*"
-    }
+  "name": "tms-builder",
+  "private": true,
+  "version": "0.0.1",
+  "description": "global builder",
+  "main": "gulpfile.js",
+  "author": "lmtdit",
+  "license": "MIT",
+  "dependencies": {
+    "clean-css": "3.4.9",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-ignore": "^2.0.1",
+    "gulp-less": "^3.0.5",
+    "gulp-plumber": "^1.0.1",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.1",
+    "lodash": "^3.10.1",
+    "through2": "^2.0.0",
+    "uglify-js": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
